@@ -1,0 +1,455 @@
+body {
+	width: 100%;
+	color: #333;
+	margin: 0 auto;
+	font-size: 16px;
+	max-width: 1380px;
+	font-family: Montserrat;
+}
+
+a {text-decoration: none;}
+
+.wrapper {
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1170px;
+}
+
+header .wrapper {
+	height: 104px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between; 
+}
+
+header .logo,
+footer .logo {
+	display: flex;
+    align-items: center;
+	margin-right: 25.21367521367521%;
+}
+
+header .logo span,
+footer .logo span {
+	font-size: 24px;
+	font-weight: 700;
+	font-family: Lato;
+	line-height: 16px;
+	text-transform: uppercase;	
+}
+
+header .logo img,
+footer .logo img {padding-right: 17px;}
+header span.color,
+footer span.color { color: #8d81ac; }
+
+
+header nav ul {
+	display: flex;
+	padding: 0;
+}
+
+header nav li:first-child,
+header nav li:last-child {padding: 0;}
+
+header nav li {
+	display: flex;
+	padding: 0 31.45px;
+}
+
+header nav li a {
+	color: #635c73;
+	font-weight: 700;
+	list-style: none;
+	line-height: 15px;
+}
+
+header button {
+	color: #fff;
+	border: none;
+	font-weight: 700; 
+	line-height: 15px;
+	border-radius: 28px;
+	background-color: #8d81ac;
+	padding: 13px 37px 9px 36px;
+}
+
+/*main*/
+
+main .fork {
+	height: 801px;
+	font-weight: 400;
+	background: url(../img/forkapp.png);
+}
+
+main .fork .wrapper,
+main .editor .wrapper,
+main .user .wrapper {
+	text-align: center;
+}
+
+main .fork h2 {
+	color: #fff;
+	margin: 0;
+	font-size: 62px;
+	font-weight: 700;
+	padding: 108px 0 18px 0 ;
+}
+
+main .fork p {
+	color: #8d81ac;
+	font-size: 30px;
+	font-family: Lato;
+	line-height: 20.45px;
+	margin: 0  0 18px 0;
+}
+
+main .fork span {
+	display: block;
+	color: #848e97;
+	line-height: 20.45px;
+	text-transform: uppercase;
+}
+
+main .editor .download {
+	position: relative;
+    bottom: 31px;
+}
+main .editor button {
+	color: #fff;
+	width: 390px;
+	height: 62px;
+	border: none;
+	font-size: 21px;
+	font-weight: 700;
+	border-radius: 28px;
+	background: #8d81ac;
+}
+
+main .download span {
+	display: block;
+	color: #848e97;
+	font-size: 14px;
+	padding-top: 19px;
+	font-weight: 400;
+}
+
+main .editor h2 {
+	color: #635c73;
+	font-size: 54px;
+	font-weight: 700;
+	margin: 66px 0 39px 0;
+	text-transform: uppercase;
+}
+
+main .editor span.text {
+	opacity: 0.8;
+	display: block;
+	font-size: 21px;
+	font-weight: 400;
+	padding: 0 12.60683760683761%;
+	line-height: 32px;
+	font-family: "Source Sans Pro";
+}
+
+
+main .editor .github{
+	height: 26px;
+	padding: 36px 0 70px 0;
+	background: url(../img/github_buttons.png) no-repeat center;
+}
+
+main .here {
+	background: #f4f4f4;
+}
+
+main .here .wrapper {
+	display: flex;
+}
+
+main .here .wrap {
+	flex-basis: 50%;
+	padding: 67px 0 69px 0;
+	border: 1px solid green;
+}
+main .here .code span {
+	color: #8d81ac;
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 20.45px;
+} 
+
+main .here h4 {
+	color: #323232;
+	margin: 35px 0 15px 0;
+	font-weight: 400;
+}
+main .here h4,
+main .here .wrap span {
+	padding: 0 87px 0 135px;
+}
+
+main .here .wrap span {
+	display: block;
+	color: #848e97;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 21px;
+}
+
+main .here .webBetter {background: url(../img/icon.png) no-repeat;}
+main .here .tool{background: url(../img/icon_2.png) no-repeat;}
+main .here .experimental{background: url(../img/icon_3.png) no-repeat;}
+main .here .creatred{background: url(../img/icon_4.png) no-repeat;}
+
+/*main .here .webBetter,
+main .here .tool,
+main .here .experimental
+main .here .creatred {width: 111px;}*/
+main .userName span {
+	color: #635c73;
+	font-size: 24px;
+	font-weight: 700;
+	margin-left: 23px;
+}
+main .userName {
+	display: flex;
+	align-items: center;
+	padding: 87px 0 0 0; 
+	justify-content: center;
+}
+
+main .userName a {
+	display: block;
+	color: #8d81ac;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: left;
+	margin: 7px 0 0 23px;
+}
+
+main .user p {
+	font-size: 20px;
+	line-height: 32px;
+	margin: 48px 0 25px 0;
+	font-family: "Source Sans Pro";
+}
+
+main .user p a {color: #8d81ac;}
+main .slider {padding: 0 190px 133px 190px;} /*без стрелок слайдера*/ 
+main .slider span {color: #848e97;}
+
+main .user br {
+	border-bottom: 1px solid silver;
+}
+
+main .links a {
+	width: 240px;
+	height: 50px;
+	font-size: 21px;
+	font-weight: 400;
+	line-height: 32px;
+	border-radius: 5px;
+	align-items: center;
+	display: inline-flex;
+	justify-content: center;
+}
+
+main .links {padding-bottom: 109px;}
+main .links a:nth-child(2) {margin: 0 40px;}
+
+main .links .git {
+	color: #333;
+	background-color: #f3f3f3;
+	/*background: url(../img/git.png) no-repeat;*/
+}
+
+main .links .twi{
+	color: #fff;
+	background-color: #26a6d1;
+}
+main .links .fb {
+	color: #fff;
+	background-color: #3b5998;
+}
+
+main .people {
+	color: #fff;
+	background: #5F5161;
+	background: url(../img/bg_people.png) no-repeat;
+}
+
+main .people h2 {
+	margin: 0;
+	padding: 95px 0;
+	font-size: 48px;
+	font-weight: 700;
+	text-align: center;
+}
+
+main .people .wrap {
+	display: flex;
+	text-align: center;
+	align-items: center;
+}
+
+main .people div.wrap {padding-bottom: 107px;}
+main .people .wrap div:nth-child(2) {margin: 0 65px;}
+
+main .people span {
+	display: block;
+	font-weight: 400;
+	padding-top: 37px;
+	font-family: "Source Sans Pro - Bold It";
+}
+
+main .pricing {background: url(../img/bg_pricing.png) no-repeat;}
+
+main .pricing h2 {
+	color: #fff;
+	font-size: 48px;
+	font-weight: 700;
+}
+
+main .subscribe {
+	padding: 55px 0;
+	background: #f4f4f4;
+}
+
+main .subscribe span {
+	color: #635c73;
+	font-size: 30px;
+	font-weight: 700;
+	margin-right: 180px;
+}
+
+main .subscribe input[type="email"] {
+	height: 42px;
+	width: 335px;
+	border: none;
+	background: #fff;
+	margin-right: 20px;
+	padding: 0 0 0 15px;
+	border-radius: 28px;
+}
+
+main .subscribe input[type="email"]::placeholder {
+	color: #c8cbcf;
+	font-size: 14px;
+	font-weight: 400;
+} 
+
+main .subscribe input[type="button"] {
+	color: #fff;
+	width: 140px;
+	height: 42px;
+	border: none;
+	font-size: 13px;
+	font-weight: 400;
+	background: #8d81ac;
+	border-radius: 28px;
+	font-family: Montserrat;
+	text-transform: uppercase;
+}
+
+main .popular .wrapper,
+footer .wrapper
+ {
+	display: flex;
+	justify-content: space-between;
+}
+main .popular .wrap {flex-basis: 30%;}
+
+main .popular h3 {
+	color: #d3d1da;
+	font-size: 28px;
+	font-weight: 700;
+	margin: 79px 0 58px 0;
+}
+
+main .popular .wrap:first-child h5 {color: #323232;}
+main .popular h5 {
+	color: #8d81ac;;
+	font-size: 16px;
+	margin-bottom: 20px;
+	font-weight: 400 bold;
+}
+
+main .popular span {
+	color: #848e97;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+main .popular button {
+	border: none;
+	width: 158px;
+	height: 35px;
+	display: block;
+	color: #8d81ac;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 36px 0 91px 0;
+	border-radius: 5px;
+	background: #f4f4f4;
+}
+
+footer .wrap {
+	flex-basis: 21.36752136752137%;
+}
+
+footer .logo {padding-bottom: 24px;}
+footer span {
+	color: #848e97;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+footer span strong {
+	color: #323232;
+	letter-spacing: 0.32px;
+}
+
+footer ul {padding: 0;}
+
+footer li {
+	font-weight: 400;
+	line-height: 23px;
+	padding: 4px 0;
+	list-style-type: none;
+}
+
+footer .number {
+	color: #3f3f3f;
+	font-size: 30px;
+	font-weight: 700;
+	letter-spacing: 0.6px;
+}
+
+footer .time {
+	display: block;
+	color: #848e97;
+	font-size: 12px;
+	font-weight: bold;
+	margin: 14px 0 0 0;
+	letter-spacing: 0.24px;
+}
+
+footer p {
+	color: #323232;
+	margin: 38px 0 21px 0;
+	font-weight: bold;
+}
+
+footer .address {
+    line-height: 23px;
+    letter-spacing: 0.28px;
+}
+
+footer h5 {
+	color: #323232;
+	font-size: 16px;
+	font-weight: 400;
+	margin: 0 0 24px 0;
+	letter-spacing: 0.32px;
+}
