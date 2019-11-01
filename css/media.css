@@ -1,0 +1,128 @@
+@media screen and (max-width: 1200px) {
+	main .here .codepen {width: 51.5% !important;}
+	main .subscribe .wrapper {text-align: center;}
+	main .subscribe span {
+		display: block;
+		margin: 0 0 40px 0 !important;
+	}
+	
+	main .here .codepen {margin-top: 0 !important;}
+	main .here .code span {
+		text-align: center !important;
+		line-height: normal !important;
+	}
+}
+
+@media screen and (max-width: 992px) {
+	header .logo {margin-right: 7% !important;}
+	.wrapper {width: 95% !important;}
+	main .here .codepen {
+		margin: 69px 0 0 0 !important;
+		width: 56% !important;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	header .logo {margin-right: 25.21367521367521% !important;}
+	header nav {
+		order: 3;
+		width: 26px;
+		height: 21px;
+		cursor: pointer;
+		background: url(../img/upMenu.png) no-repeat;
+	}
+
+	header nav li a {display: none;}
+	header button {
+		width: 150px;
+		height: 48px;
+		padding: 0 !important;
+	}
+	
+	main .fork p {line-height: normal !important;}
+	main .here .wrapper {flex-direction: column;}
+	main .here img {display: none;}
+	main .here .wrap {order: 2;}
+	main .here .wrap span {padding-right: 0 !important;}
+	main .here .code{order: 1;}
+	main .user p {margin: 48px 0 25px 0 !important;}
+	main .links {
+		flex-direction: column;
+		padding-bottom: 30px !important;
+	}
+
+	main .user .wrap span {margin: 18px 0 29px 0 !important;}
+	main .people .wrap-row {display: flex;}
+	main .people .wrap {flex-direction: column;}
+	main .people .wrap div {
+    	height: 150px;
+    	display: flex;
+    	flex-wrap: wrap;
+    	align-items: center;
+    	margin-bottom: 30px;
+    	justify-content: space-around;
+    }
+	
+    main .people .wrap div:nth-child(2) {margin: 0 0 30px 0 !important;}
+	main .pricing .wrap {justify-content: space-around !important;}
+    main .pricing .wrap-row {
+    	margin: 0 5px;
+    	align-items: center;
+    	flex-direction: column;
+		display: flex !important;
+    }
+	
+	main .pricing .block_pricing {display: none;}
+    main .pricing .wrap-row .block_pricing {
+    	display: block;
+    	height: 490px !important;
+    }
+
+    main .pricing .wrap-row .block_pricing:first-child {margin-bottom: 14px;}
+    main .pricing .text {margin: 41px 0 38px 0 !important;}
+}
+
+@media screen and (max-width: 480px) {
+		.wrapper {width: 90% !important;}
+		header .logo {margin-right: 3% !important;}
+
+		main .editor h2 {font-size: 38px !important;}
+		main .editor button {width: 100% !important;}
+
+		main .slider {margin-top: 39px !important;}
+		main .slider img {margin: auto 5px !important;}
+		main .user p {margin: 0 0 25px 0 !important;}
+
+		main .people .wrap-row {flex-direction: column;}
+		main .people div.wrap {padding-bottom: 0px !important;}
+
+		main .pricing .wrap {
+			align-items: center !important;
+			flex-direction: column;
+		}
+
+		main .pricing .wrap .block_pricing {
+			margin-top: 14px;
+			display: block !important;
+		}
+		main .pricing .wrap-row .block_pricing {display: none !important;}
+		
+		main .subscribe input[type="email"] {
+			margin: 0 0 14px 0 !important;
+			width: 290px !important;
+		}
+
+		main .subscribe input[type="button"] {
+			width: 305px !important; 
+		}
+
+		main .popular button {margin-bottom: 45px !important;}
+		main .popular h3 {margin: 14px 0 33px 0 !important;}
+		main .popular .wrapper {margin-top: 44px !important;}
+		main .popular .wrapper,
+		footer .wrapper {flex-direction: column;}
+
+		footer .wrapper {margin-bottom: 87px !important;}
+		footer .wrap {margin-top: 34px !important;}
+}
+

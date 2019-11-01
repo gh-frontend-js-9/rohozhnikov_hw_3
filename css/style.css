@@ -1,3 +1,4 @@
+@import "media.css" all;
 body {
 	width: 100%;
 	color: #333;
@@ -79,7 +80,7 @@ header button {
 main .fork {
 	height: 801px;
 	font-weight: 400;
-	background: url(../img/forkapp.png);
+	background: url(../img/forkapp.png) center;
 }
 
 main .fork .wrapper,
@@ -170,14 +171,23 @@ main .here .wrapper {
 main .here .wrap {
 	flex-basis: 50%;
 	padding: 67px 0 69px 0;
-	border: 1px solid green;
 }
+
 main .here .code span {
+	display: block;
 	color: #8d81ac;
 	font-size: 48px;
 	font-weight: 700;
+	margin-top: 84px;
 	line-height: 20.45px;
-} 
+}
+
+main .here .codepen {
+	width: 710px;
+	overflow: hidden;
+    position: absolute;
+    margin: 69px 0 0 -20px;
+}
 
 main .here h4 {
 	color: #323232;
@@ -231,16 +241,42 @@ main .userName a {
 main .user p {
 	font-size: 20px;
 	line-height: 32px;
-	margin: 48px 0 25px 0;
+	margin: 48px 100px 25px 100px;
 	font-family: "Source Sans Pro";
 }
 
 main .user p a {color: #8d81ac;}
-main .slider {padding: 0 190px 133px 190px;} /*без стрелок слайдера*/ 
+main .slider {
+	display: flex;
+    align-items: center;
+	}
+
+main .slider img {
+    height: 16px;
+    display: block;
+    margin: 0 50px;
+    cursor: pointer;
+}
+
 main .slider span {color: #848e97;}
 
 main .user br {
 	border-bottom: 1px solid silver;
+}
+
+main .links i{
+	right: 50px;
+	font-size: 15px;
+	text-align: left;
+	position: relative;
+}
+
+
+main .user .wrap span {
+	display: block;
+	color: #848e97;
+	font-size: 14px;
+	margin-top: 18px;
 }
 
 main .links a {
@@ -255,13 +291,16 @@ main .links a {
 	justify-content: center;
 }
 
-main .links {padding-bottom: 109px;}
+main .links {
+	display: flex;
+	padding-bottom: 109px;
+    justify-content: space-evenly;
+}
 main .links a:nth-child(2) {margin: 0 40px;}
 
 main .links .git {
 	color: #333;
 	background-color: #f3f3f3;
-	/*background: url(../img/git.png) no-repeat;*/
 }
 
 main .links .twi{
@@ -273,10 +312,15 @@ main .links .fb {
 	background-color: #3b5998;
 }
 
+main .user hr {
+	width: 70%;
+	margin: 60px auto;
+    border: 1px solid #f4f4f4;
+}
+
 main .people {
 	color: #fff;
-	background: #5F5161;
-	background: url(../img/bg_people.png) no-repeat;
+	background: url(../img/bg_people.png) no-repeat #4A3B4E;
 }
 
 main .people h2 {
@@ -303,12 +347,92 @@ main .people span {
 	font-family: "Source Sans Pro - Bold It";
 }
 
-main .pricing {background: url(../img/bg_pricing.png) no-repeat;}
+main .pricing {
+	border: 1px solid transparent;
+	background: url(../img/bg_Pricing.png) no-repeat #4A3B4E;
+}
+
+main .pricing .wrapper {text-align: center;}
 
 main .pricing h2 {
 	color: #fff;
 	font-size: 48px;
 	font-weight: 700;
+	margin-bottom: 120px;
+}
+
+main .pricing .wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+main .pricing .wrap-row { display: none; }
+main .pricing .block_pricing {
+	color: #fff;
+	width: 274px;	
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.11);
+}
+
+main .pricing .rang {
+	font-size: 24px;
+	font-weight: 400;
+	padding: 45px 0 33px 0;
+	text-transform: uppercase;
+    background-color: rgba(255, 255, 255, 0.06);
+}
+
+main .pricing .price {
+	font-size: 60px;
+	font-weight: 700;
+	margin: 36px 0 26px 0;
+	/*background: red;*/
+	text-transform: uppercase;
+	font-family: "Montserrat - Bold";
+}
+
+main .pricing .price span {
+	font-weight: 400;
+	font-family: "Montserrat - Regular";
+}
+
+main .pricing .per {
+	opacity: 0.3;
+	font-size: 14px;
+	font-weight: 400;
+	margin-bottom: 38px;
+	text-transform: uppercase;
+}
+
+main .pricing .line {
+	height: 5px;
+	width: 60px;
+	margin: 0 auto;
+	margin-bottom: 31px;
+	background: #8d81ac;
+}
+
+main .pricing button {
+	color: #fff;
+	width: 160px;
+	height: 42px;
+	border: none;
+	font-size: 15px;
+	font-weight: 400;
+	border-radius: 28px;
+	margin: 36px 0 38px 0;
+	text-transform: uppercase;
+	background-color: rgba(255, 255, 255, 0.15);
+}
+
+main .pricing .text {
+	opacity: 0.8;
+	display: block;
+	color: #a291a5;
+	font-size: 14px;
+	font-weight: 400;
+	margin: 133px 0 77px 0;
+	font-family: "Source Sans Pro";
 }
 
 main .subscribe {
@@ -389,12 +513,19 @@ main .popular button {
 	color: #8d81ac;
 	font-size: 14px;
 	font-weight: 400;
-	margin: 36px 0 91px 0;
+	margin: 36px 0 70px 0;
 	border-radius: 5px;
 	background: #f4f4f4;
 }
 
+main .popular hr {
+	width: 70%;
+	margin: 0 auto;
+    border: 1px solid #f4f4f4;
+}
+
 footer .wrap {
+	margin-top: 80px;
 	flex-basis: 21.36752136752137%;
 }
 
