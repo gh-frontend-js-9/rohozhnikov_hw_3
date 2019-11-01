@@ -6,6 +6,7 @@
 	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Source+Sans+Pro:400,400i,700,700i&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
 	<title>Document</title>
 </head>
 <body>
@@ -68,7 +69,10 @@
 					</div>
 				</div>
 				<div class="code">
-					<span class="">&#60;Here is what you get&#62;</span>
+					<span>&#60;Here is what you get&#62;</span>
+					<!--В мобильной  версии  была  убрана--><div class="codepen">
+						<img src="img/code_block.png" alt="code block for developer">
+					</div><!--..конец-->
 				</div>
 			</div>
 			<!--blackBlock-->
@@ -82,64 +86,159 @@
 						<a href="#">@DoctorS</a>
 					</div>
 				</div>
-				<div class="slider"><!--слайдер-->
-					<p><a href="#">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</p>
-					<span>2 hours ago</span>
+				<div class="slider">
+					<img src="img/Arrow_L.png" alt="" class="arrov">
+					<div>
+						<p><a href="#">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</p>
+						<span>2 hours ago</span>
+					</div>
+					<img src="img/Arrow_R.png" alt="" class="arrov">
 				</div>
+				<hr>
 				<!--socialnetworck-->
 				<div class="links">
-					<a href="#" class="git">GitHub</a>
-					<a href="#" class="twi">Twitter</a>
-					<a href="#" class="fb">Facebook</a>
+					<div class="wrap">
+						<a href="#" class="git"><i class="fab fa-github"></i>GitHub</a>
+						<span>7 352 Followers</span>
+					</div>
+					<div class="wrap">
+						<a href="#" class="twi"><i class="fab fa-twitter"></i>Twitter</a>
+						<span>136 312 Followers</span>
+					</div>
+					<div class="wrap">
+						<a href="#" class="fb"><i class="fab fa-facebook-f"></i>Facebook</a>
+						<span>218 092 Subscribers</span>
+					</div>
 				</div>
 			</div>
 		</section>
 		<section class="people">
 			<div class="wrapper">
 				<h2>People Are Talking About Fork</h2>
-				<div class="wrap">
-					<div>
-						<img src="img/magazine.png" alt="magazine">
-						<span>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</span>
-					</div>
-					<div>
-						<img src="img/codrops.png" alt="codrops">
+				<div class="wrap-row">
+					<div class="wrap">
+						<div>
+							<img src="img/magazine.png" alt="magazine">
+							<span>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</span>
+						</div>
+						<div>
+							<img src="img/codrops.png" alt="codrops">
 						<span>Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</span>
+						</div>
+						<div>
+							<img src="img/w.png" alt="w">
+							<span>In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.</span>
+						</div>
 					</div>
-					<div>
-						<img src="img/w.png" alt="w">
-						<span>In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula.</span>
-					</div>
-				</div>
-				<div class="wrap">
-					<div>
-						<img src="img/pixel.png" alt="pixel">
-						<span>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</span>
-					</div>
-					<div>
-						<img src="img/bloq.png" alt="bloq">
-						<span>Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus.</span>
-					</div>
-					<div>
-						<img src="img/tnw.png" alt="tnw">
-						<span>Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</span>
-					</div>
+					<div class="wrap">
+						<div>
+							<img src="img/pixel.png" alt="pixel">
+							<span>Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</span>
+						</div>
+						<div>
+							<img src="img/bloq.png" alt="bloq">
+							<span>Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus.</span>
+						</div>
+						<div>
+							<img src="img/tnw.png" alt="tnw">
+							<span>Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</span>
+						</div>
+					</div>	
 				</div>
 			</div>
-			<br>
 		</section>
-		<!--<section class="pricing">
+		<section class="pricing">
 			<div class="wrapper">
 				<h2>Fork Subscription Pricing</h2>
-				<div>
-					<div></div>
-					<div></div>
-					<div></div>
-					<div></div>
+				<div class="wrap">
+					<div class="block_pricing">
+						<div class="rang">Students</div>
+						<div>
+							<p class="price"><span>$</span>29</p>
+							<p class="per">per month</p>
+							<div class="line"></div>
+							<p>Personal License</p>
+							<button>purchase</button>
+						</div>
+					</div>
+					<div class="block_pricing">
+						<div class="rang">Personal License</div>
+						<div>
+							<p class="price"><span>$</span>59</p>
+							<p class="per">per Month</p>
+							<div class="line"></div>
+							<p>Professional License Email Support</p>
+							<button>purchase</button>
+						</div>
+					</div>
+					<div class="block_pricing">
+						<div class="rang">agency</div>
+						<div>
+							<p class="price"><span>$</span>99</p>
+							<p class="per">per month</p>
+							<div class="line"></div>
+							<p>1-12 Team Members Phone Support</p>
+							<button>purchase</button>
+						</div>
+					</div>
+					<div class="block_pricing">
+						<div class="rang">enterprise</div>
+						<div>
+							<p class="price"><span>$</span>159</p>
+							<p class="per">per month</p>
+							<div class="line"></div>
+							<p>Unlimited Team Members 24/ 7 Phone Support</p>
+							<button><span>purchase</span></button>
+						</div>
+					</div>
+					<div class="wrap-row">
+						<div class="block_pricing">
+							<div class="rang">Students</div>
+							<div>
+								<p class="price"><span>$</span>29</p>
+								<p class="per">per month</p>
+								<div class="line"></div>
+								<p>Personal License</p>
+								<button>purchase</button>
+							</div>
+						</div>
+						<div class="block_pricing">
+							<div class="rang">Personal License</div>
+							<div>
+								<p class="price"><span>$</span>59</p>
+								<p class="per">per Month</p>
+								<div class="line"></div>
+								<p>Professional License Email Support</p>
+								<button>purchase</button>
+							</div>
+						</div>
+					</div>
+					<div class="wrap-row">
+						<div class="block_pricing">
+							<div class="rang">agency</div>
+							<div>
+								<p class="price"><span>$</span>99</p>
+								<p class="per">per month</p>
+								<div class="line"></div>
+								<p>1-12 Team Members Phone Support</p>
+								<button>purchase</button>
+							</div>
+						</div>
+						<div class="block_pricing">
+							<div class="rang">enterprise</div>
+							<div>
+								<p class="price"><span>$</span>159</p>
+								<p class="per">per month</p>
+								<div class="line"></div>
+								<p>Unlimited Team Members 24/ 7 Phone Support</p>
+								<button><span>purchase</span></button>
+							</div>
+						</div>
+					</div>
 				</div>
-				<span>Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
+				<span class="text">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</span>
 			</div>
-		</section><--></-->
+		</section>
 		<section class="subscribe">
 			<div class="wrapper">
 				<form action="">
@@ -189,6 +288,7 @@
 					<a href="#"><button>Go to Blo5</button></a>
 				</div>
 			</div>
+			<hr>
 		</section>
 	</main>
 	<footer>
