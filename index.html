@@ -7,6 +7,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat:400,700|Source+Sans+Pro:400,400i,700,700i&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+	<script async defer src="https://buttons.github.io/buttons.js"></script>
 	<title>Document</title>
 </head>
 <body>
@@ -16,13 +17,25 @@
 				<img src="img/logo.png" alt="Logo">
 				<span>Fork<span class="color">IO</span></span>
 			</div>
-			<nav>
-				<ul>
-					<li><a href="#">Overview</a></li>
-					<li><a href="#">About Fork</a></li>
-					<li><a href="#">Buying Options</a></li>
-					<li><a href="#">Support</a></li>
+			<nav class="nav">
+				<ul class="nav_menu">
+					<li><a href="#over">Overview</a></li>
+					<li><a href="#about">About Fork</a></li>
+					<li><a href="#buying">Buying Options</a></li>
+					<li><a href="#support">Support</a></li>
 				</ul>
+				<span class="nav_btn" onclick="openNav()"></span>
+				<div id="sliderMenu" class="menu">
+					<div class="blackout"></div>
+					<span class="flex_button">
+						<a class="close" href="javascript:void(0)" onclick="closeNav()">×</a>
+						<button>Buy Now</button>
+					</span>
+					<a href="#over" aria-label="Overview">Overview</a>
+					<a href="#about" aria-label="Link about Fork Io section">About fork</a>
+					<a href="#buying" aria-label="link on Byu">Buying options</a>
+					<a href="#support" aria-label="link on support page">Support</a>
+				</div>
 			</nav>
 			<button>Buy Now</button>
 		</div>
@@ -41,10 +54,9 @@
 					<button>Download For Free Now</button>
 					<span>Unlimited 30-Days Trial Period</span>
 				</div>
-				<h2>Revolutionary editor</h2>
+				<h2 id="over">Revolutionary editor</h2>
 				<span class="text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.
 				</span>
-				<!--Вставка Git-->
 				<div class="github"></div>
 			</div>
 		</section>
@@ -70,13 +82,12 @@
 				</div>
 				<div class="code">
 					<span>&#60;Here is what you get&#62;</span>
-					<!--В мобильной  версии  была  убрана--><div class="codepen">
+					<div class="codepen">
 						<img src="img/code_block.png" alt="code block for developer">
-					</div><!--..конец-->
+					</div>
 				</div>
 			</div>
-			<!--blackBlock-->
-		</section>
+		</section> 
 		<section class="user">
 			<div class="wrapper">
 				<div class="userName">
@@ -95,7 +106,6 @@
 					<img src="img/Arrow_R.png" alt="" class="arrov">
 				</div>
 				<hr>
-				<!--socialnetworck-->
 				<div class="links">
 					<div class="wrap">
 						<a href="#" class="git"><i class="fab fa-github"></i>GitHub</a>
@@ -114,7 +124,7 @@
 		</section>
 		<section class="people">
 			<div class="wrapper">
-				<h2>People Are Talking About Fork</h2>
+				<h2 id="about">People Are Talking About Fork</h2>
 				<div class="wrap-row">
 					<div class="wrap">
 						<div>
@@ -149,7 +159,7 @@
 		</section>
 		<section class="pricing">
 			<div class="wrapper">
-				<h2>Fork Subscription Pricing</h2>
+				<h2 id="buying">Fork Subscription Pricing</h2>
 				<div class="wrap">
 					<div class="block_pricing">
 						<div class="rang">Students</div>
@@ -157,7 +167,7 @@
 							<p class="price"><span>$</span>29</p>
 							<p class="per">per month</p>
 							<div class="line"></div>
-							<p>Personal License</p>
+							<p class="name">Personal License</p>
 							<button>purchase</button>
 						</div>
 					</div>
@@ -167,7 +177,7 @@
 							<p class="price"><span>$</span>59</p>
 							<p class="per">per Month</p>
 							<div class="line"></div>
-							<p>Professional License Email Support</p>
+							<p class="name">Professional License Email Support</p>
 							<button>purchase</button>
 						</div>
 					</div>
@@ -177,7 +187,7 @@
 							<p class="price"><span>$</span>99</p>
 							<p class="per">per month</p>
 							<div class="line"></div>
-							<p>1-12 Team Members Phone Support</p>
+							<p class="name">1-12 Team Members Phone Support</p>
 							<button>purchase</button>
 						</div>
 					</div>
@@ -187,7 +197,7 @@
 							<p class="price"><span>$</span>159</p>
 							<p class="per">per month</p>
 							<div class="line"></div>
-							<p>Unlimited Team Members 24/ 7 Phone Support</p>
+							<p class="name">Unlimited Team Members 24/ 7 Phone Support</p>
 							<button><span>purchase</span></button>
 						</div>
 					</div>
@@ -198,7 +208,7 @@
 								<p class="price"><span>$</span>29</p>
 								<p class="per">per month</p>
 								<div class="line"></div>
-								<p>Personal License</p>
+								<p class="name">Personal License</p>
 								<button>purchase</button>
 							</div>
 						</div>
@@ -208,7 +218,7 @@
 								<p class="price"><span>$</span>59</p>
 								<p class="per">per Month</p>
 								<div class="line"></div>
-								<p>Professional License Email Support</p>
+								<p class="name">Professional License Email Support</p>
 								<button>purchase</button>
 							</div>
 						</div>
@@ -220,7 +230,7 @@
 								<p class="price"><span>$</span>99</p>
 								<p class="per">per month</p>
 								<div class="line"></div>
-								<p>1-12 Team Members Phone Support</p>
+								<p class="name">1-12 Team Members Phone Support</p>
 								<button>purchase</button>
 							</div>
 						</div>
@@ -230,7 +240,7 @@
 								<p class="price"><span>$</span>159</p>
 								<p class="per">per month</p>
 								<div class="line"></div>
-								<p>Unlimited Team Members 24/ 7 Phone Support</p>
+								<p class="name">Unlimited Team Members 24/ 7 Phone Support</p>
 								<button><span>purchase</span></button>
 							</div>
 						</div>
@@ -251,7 +261,7 @@
 		</section>
 		<section class="popular">
 			<div class="wrapper">
-				<div class="wrap">
+				<div id="support" class="wrap">
 					<h3>New in Release 2.8</h3>
 					<h5><strong>Fully Available: Live Preview Support for Multiple Browsers</strong></h5>
 					<span>Morbi faucibus ante ipsum, a tincidunt libero posuere et. Etiam tempor tortor at odio condimentum, sit amet fringilla ligula maximus. Mauris venenatis nisl nisi, et dictum dui aliquet nec. Sed erat, nec aliquam vel, aliquam ac felis.</span>
@@ -323,5 +333,14 @@
 			</div>
 		</div>
 	</footer>
+	<script>
+		function openNav() {
+		  document.getElementById("sliderMenu").style.display = "block";
+		}
+	  
+		function closeNav() {
+		  document.getElementById("sliderMenu").style.display = "none";
+		}
+	</script>
 </body>
 </html>
